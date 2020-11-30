@@ -1,0 +1,11 @@
+For systems with x32 architecture the MX* variables in global_var.h need to be changed (new paramters are given)
+otherwise we need two special flags for common linux systems:
+-std=c99   (for allowing for loops to initialize parameters which is my fault...)
+-lm  (for recognizing math functions in c99 mode...I will correct all this)
+
+If segmentation fault happens the MX* values in global_var.h are too small!
+
+28/4/2016:
+A new code version with a better NET boundary calculation is developed -> incompatible with older NET versions
+Now the NET does not care about changes in dt anymore
+
