@@ -13,7 +13,7 @@ NUMBER_OF_ITERATIONS________________________________niter= 50001
 NUMBER_OF_EQUILIBRATION_STEPS____________________neqsteps= 9
 NUMBER_OF_ENSEMBLE_AVERAGING_ITERS____________________nav= 50
 START_No_OF_MTs__(if<=0_by_bundle.rad)____________MTfirst= 3
-SECS_FOR_ADDING_NEW_MTs_EVERY_(>0)________________newfreq= 530
+SECS_FOR_ADDING_NEW_MTs_EVERY_(>0)________________newfreq= 212
 NUMBER_OF_MTs_TO_ADD______________________________newMTs0= 1
 OPPENING_LEFT_BOUNDARY_(microM)___________________lbound0= 0.
 OPPENING_RIGHT_BOUNDARY_(microM)(FREE_SPRING_L)___rbound0= 6.
@@ -46,4 +46,4 @@ LEFT_NET_DISSOCIATION_RATE_(#/sec)______Lnet.dissociation= 0.001
 ACTIN_ASSOCIATION_RATE_(#/sec)_______________actin.attach= 0.
 ACTIN_DEASSOCIATION_RATE_(#/sec)___________actin.deattach= 0.
 MT_FLIP_RATE_(#/dt)__________________________________pFlp= 0.0
-MT_Degradation_Probability_(#/dt)_________________degprob= 0.0001
+MT_Degradation_Probability_(#/dt)_________________degprob= 0.00025
