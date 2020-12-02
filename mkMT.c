@@ -115,7 +115,7 @@ void mkMTs(int newMTs)
       /*###############################################*/
 
       /* Add/Initiate new MTs; and allocate memory
-	 for all vectors in struct MT */
+	    for all vectors in struct MT */
 
       if (TotFluxConst)
           newgen=newMTs+nlost;
@@ -486,11 +486,12 @@ void getcoor(int istart, int n)
 
 
     /* if first iteration select polarityratio0 as criteria*/
-    if (iter==1)
+    /* EDIT MAX 02/12/2020 -> added r=... because otherwise r is not defined in first iteration*/
+    if (iter==1){
 	    criteria=PolarityRatio0;
-
+      r=ran1(&idum);
+    }
     else{
-
       if (polaritymodel==FIXED){
         criteria=PolarityRatioNew;
       }
