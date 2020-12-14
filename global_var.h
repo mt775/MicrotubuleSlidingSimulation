@@ -27,7 +27,7 @@ float degprob;
 int mxmts,mxmotors;
 
 /******************CHANGE  to 1 for debugging********************/
-int DEBUG;
+int DEBUG=0;
 /**********************************************************/
 
 int twopop;     /* conditional index to genrate one/two MT populations */
